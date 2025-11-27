@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <p>ЛОГО</p>
+        <button>Войти</button>
+    </header>
+    <section class="main animation">
+        <div class="main_content">
+            <h1>
+                Заголовок<br/>
+                На две строки
+            </h1>
+            <h2>Подзаголовок</h2>
+            <button class="main_btn">Начать</button>
+        </div>
+        <div class="block_img"></div>
+    </section>
+
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".main").classList.add("show");
+        });
+    </script>
+</body>
+</html>
