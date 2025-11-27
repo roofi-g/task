@@ -7,9 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-<!-- Что должно быть:
+<!-- Тестовое задание (Frontend + UI/UX, 40 минут)
 
-Сверху: логотип слева, кнопка «Войти» справа.
+Сделай один экран, как если бы это был старт лендинга.
+
+Что должно быть:
+
+✔ Сверху: логотип слева, кнопка «Войти» справа. 
 
 По центру слева: заголовок на 2 строки, под ним подзаголовок, и ниже кнопка CTA (придумай текст сам, 1–2 слова, например: «Начать»).
 
@@ -27,21 +31,24 @@
 — Верстка чистая: HTML по смыслу (header, section, h1, p, button).
 — CSS отдельным файлом или в редакторе, без готовых шаблонов и копирования чужих секций.
 — Только один экран, без лишних блоков. -->
+
     <div class="content animation">
+
         <header class="header">
-            <p>ЛОГО</p>
-            <button>Войти</button>
+            <a href="#">ЛОГО</a>
+            <button class="button">Войти</button>
         </header>
+
         <section class="main">
-            <div class="main_content">
-                <h1>
-                    Заголовок<br/>
-                    На две строки
-                </h1>
+            <div class="main_left">
+                <h1>Заголовок<br/>на две строки</h1>
                 <p>Подзаголовок</p>
-                <button class="main_btn">Начать</button>
+                <button class="main_btn button">Начать</button>
             </div>
-            <div class="block_img"></div>
+
+            <div class="main_right">
+                <img src="https://i.ytimg.com/vi/hm9HHHqEiEQ/maxresdefault.jpg" alt="">
+            </div>
         </section>
     </div>
     
