@@ -7,26 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <p>ЛОГО</p>
-        <button>Войти</button>
-    </header>
-    <section class="main animation">
-        <div class="main_content">
-            <h1>
-                Заголовок<br/>
-                На две строки
-            </h1>
-            <h2>Подзаголовок</h2>
-            <button class="main_btn">Начать</button>
-        </div>
-        <div class="block_img"></div>
-    </section>
+<!-- Что должно быть:
 
-    <script>
-        window.addEventListener("load", () => {
-            document.querySelector(".main").classList.add("show");
-        });
-    </script>
+Сверху: логотип слева, кнопка «Войти» справа.
+
+По центру слева: заголовок на 2 строки, под ним подзаголовок, и ниже кнопка CTA (придумай текст сам, 1–2 слова, например: «Начать»).
+
+Справа от текста — картинка/блок (можно просто цветной прямоугольник или SVG, без детали).
+
+Адаптив:
+— На телефоне (320px): сначала текст, под ним кнопка, ниже блок с картинкой.
+— На компьютере (1366px и шире): текст и кнопка слева, картинка справа.
+
+Микро-эффекты:
+— При наведении на CTA кнопка должна чуть «подниматься» или давать тень.
+— Экран должен плавно появиться при загрузке (легкий fade-in). Если сможешь сделать только на CSS — супер. Если нужен 5–10 строк JS — окей, но минимум.
+
+Правила:
+— Верстка чистая: HTML по смыслу (header, section, h1, p, button).
+— CSS отдельным файлом или в редакторе, без готовых шаблонов и копирования чужих секций.
+— Только один экран, без лишних блоков. -->
+    <div class="content animation">
+        <header class="header">
+            <p>ЛОГО</p>
+            <button>Войти</button>
+        </header>
+        <section class="main">
+            <div class="main_content">
+                <h1>
+                    Заголовок<br/>
+                    На две строки
+                </h1>
+                <p>Подзаголовок</p>
+                <button class="main_btn">Начать</button>
+            </div>
+            <div class="block_img"></div>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
